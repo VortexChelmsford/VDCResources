@@ -1,0 +1,52 @@
+// VORTEX LANGUAGE PACK 
+// FR français - (France français) par Vortex Chelmsford
+// Informations disponibles sur le site Web de Vortex
+{
+	// Veuillez donner des informations sur la langue utilisée dans ce fichier.
+	// Le nom complet de la langue doit aller dans l'élément "Nom".
+	// L'abréviation doit être les deux premières lettres minuscules du nom, par exemple, "anglais" est "en"
+	// suivi d'un trait de soulignement, puis le nom du pays dans lequel la langue est définie pour utiliser l'orthographe,
+	// par exemple, pour les orthographes en anglais, le code est GB. D'où le nom "en_GB".
+	// Enfin, saisissez le nom du pays représenté dans la dernière partie de l'abréviation dans la section "Pays".
+	"Language": {
+		"Name": "Françias - FR",
+		"Abbreviation": "fr_FR",
+		"Country": "Françias"
+	},
+	
+	// Si vous modifiez ce pack, remplacez "Pris en charge" par ** N'IMPORTE QUEL CHIFFRE AUTRE QUE ZERO **
+	// Définissez le "VLP_Code" sur ** TOUT AU-DESSUS DE 10 000 **
+	"VortexLanguagePack": {
+		"Supported": 1,
+		"VLP_Code": 3
+	},
+	
+	// "LanguageDefined" contient toutes les chaînes de langue définies pour ce module linguistique. Toutes les chaînes sont
+	// séparés en groupes (par exemple; "Dashboard_SystemSound" et "Dashboard_Instructions"), les chaînes individuelles
+	// sont un niveau en dessous des groupes, par exemple: "GroupTitle" et "GetVolume_Description". Modifiez les valeurs après le
+	// deux points (:) pour modifier ce que VDC affichera lors de l'exécution.
+	// RAPPELEZ-VOUS: Si vous modifiez la syntaxe, ou les noms des objets (par exemple, la modification de "GroupTitle") causera un problème
+	// avec le fichier du module linguistique, et cette chaîne ne sera pas lue.
+	// Vous pouvez voir que le module linguistique n'a pas pu être lu en recherchant un message d'erreur rouge dans Language Manager dans
+	// la console, ou si une ou plusieurs chaînes apparaissent comme quelque chose commençant par: "langstrings.LanguageDefined".
+	// Si vous cassez la syntaxe JSON, provoquant une modification de syntaxe illégale, le fichier entier se cassera et vous aurez soit
+	// pour rechercher l'erreur ou réécrire le module linguistique. C'est généralement le problème lorsqu'aucun contrôle n'affiche le bon
+	// texte. Rappelez-vous cependant que tous les contrôles n'utilisent pas encore ce système, et ce ne sera pas le cas pendant longtemps,
+	// purement à la quantité massive de contrôles utilisés dans l'Application (près de 40 000).
+	"LanguageDefined": {
+		"Groups": [
+			{
+				"Dashboard_SystemSound": {
+					"GroupTitle": "Options de son du système",
+					"GetVolume_Description": "Renvoie le volume actuel du système d'exploitation Windows. Nous sommes revenus toutes les secondes et demie environ ..."
+				},
+				"Dashboard_Instructions": {
+					"Notification_Home_NotifForMovedControls": "Certains contrôles ont été déplacés! Pour les utiliser, vous devez maintenant cliquer sur Options de la page d'accueil!"
+				},
+				"Dashboard_Buttons": {
+					"HomepageOptions": "Options"
+				}
+			}
+		]	
+	}	
+}
