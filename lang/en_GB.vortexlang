@@ -44,7 +44,8 @@
 					"Notification_Home_NotifForMovedControls": "Some of the controls have been moved! To use them, you must now click Homepage Options!"
 				},
 				"Dashboard_Buttons": {
-					"HomepageOptions": "Homepage Options"
+					"HomepageOptions": "Homepage Options",
+					"ExecuteQuickAction": "Execute"
 				}
 			}
 		]	
