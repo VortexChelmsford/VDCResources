@@ -1,0 +1,52 @@
+// VORTEX LANGUAGE PACK 
+// ES Spanish - (España Española) por Vortex Chelmsford
+// Información disponible en el sitio web de Vortex
+{
+	// Proporcione información sobre el idioma utilizado en este archivo.
+	// El nombre completo del idioma debe ir dentro del elemento "Nombre".
+	// La abreviatura debe ser las dos primeras letras minúsculas del nombre, por ejemplo, "inglés" es "en"
+	// seguido de un guión bajo, luego el nombre del país en el que se establece el idioma para utilizar la ortografía,
+	// por ejemplo, para la ortografía en gran inglés, el código es GB. De ahí el nombre "en_GB".
+	// Por último, escriba el nombre del país representado en la última parte de la abreviatura en la sección "País".
+	"Language": {
+		"Name": "Española - ES",
+		"Abbreviation": "sp_ES",
+		"Country": "Española"
+	},
+	
+	// Si modifica este paquete, cambie "Compatible" a ** CUALQUIER NÚMERO QUE NO sea CERO **
+	// Establezca el "VLP_Code" en ** CUALQUIER COSA SUPERIOR A 10,000 **
+	"VortexLanguagePack": {
+		"Supported": 1,
+		"VLP_Code": 2
+	},
+	
+	// "LanguageDefined" contiene todas las cadenas de idioma definidas para este paquete de idioma. Todas las cuerdas son
+	// separados en grupos (por ejemplo; "Dashboard_SystemSound" y "Dashboard_Instructions"), las cadenas individuales
+	// están un nivel debajo de los grupos, por ejemplo: "GroupTitle" y "GetVolume_Description". Modifique los valores después de
+	// dos puntos (:) para modificar lo que VDC mostrará en tiempo de ejecución.
+	// RECUERDA: Si modificas la sintaxis o los nombres de los objetos (por ejemplo, modificar "GroupTitle") causarán un problema
+	// con el archivo de paquete de idioma, y ​​esa cadena no se leerá.
+	// Puede ver que el paquete de idioma no se puede leer buscando un mensaje de ERROR rojo de Language Manager en
+	// la consola, o si una o más cadenas se muestran como algo que comienza con: "langstrings.LanguageDefined".
+	// Si rompes la sintaxis JSON, causando una modificación ilegal de la sintaxis, todo el archivo se romperá y tendrás
+	// para encontrar el error o reescribir el paquete de idioma. Este suele ser el problema cuando ningún control muestra el correcto
+	// texto. Sin embargo, recuerde que no todos los controles usan este sistema todavía, y ese no será el caso por mucho tiempo, debido
+	// puramente a la gran cantidad de controles utilizados dentro de la Aplicación (casi 40,000)
+	"LanguageDefined": {
+		"Groups": [
+			{
+				"Dashboard_SystemSound": {
+					"GroupTitle": "Opciones de sonido del sistema",
+					"GetVolume_Description": "Devuelve el volumen actual del sistema operativo Windows. Devuelto cada segundo y medio más o menos ..."
+				},
+				"Dashboard_Instructions": {
+					"Notification_Home_NotifForMovedControls": "¡Algunos de los controles se han movido! Para usarlos, ¡ahora debe hacer clic en Opciones de la página de inicio!"
+				},
+				"Dashboard_Buttons": {
+					"HomepageOptions": "Opciones de página de inicio"
+				}
+			}
+		]	
+	}	
+}
