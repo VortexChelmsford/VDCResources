@@ -1,0 +1,60 @@
+// VORTEX LANGUAGE PACK 
+// GB English - (United Kingdom English) by Vortex Chelmsford 
+// Information available on Vortex Website
+{
+	// Please give information about the language used within this file.
+	// The full name of the language should go within the "Name" item.
+	// The abbreviation should be the first two lower case letters of the name, for example, "English" is "en"
+	// followed by an underscore, then the name of the country the language is set out to use spellings for,
+	// for example, for spellings in Great Britian, the code is GB. Hence the name "en_GB".
+	// Lastly, type the name of the country represented in the last part of the abbreviation in the "Country" section.
+	"Language": {
+		"Name": "English - GB",
+		"Abbreviation": "en_GB",
+		"Country": "United Kingdom"
+	},
+	
+	// Give "FlagName" the file path to a .png file no more than 1200 x 1200 pixels. This will (in the future) be 
+	// displayed on the dashboard. If no path is given, and just a file name, the program will scan inside the
+	// lang folder of the Vortex Digital Control root installation.
+	"FetchFiles": {
+		"FlagName": "flag.png"
+	},
+	
+	// If modifying this pack, change "Supported" to **ANYTHING NUMBER OTHER THAN ZERO**
+	// Set the "VLP_Code" to **ANYTHING ABOVE 10,000**
+	"VortexLanguagePack": {
+		"Supported": 1,
+		"VLP_Code": 2
+	},
+	
+	// "LanguageDefined" contains all of the defined language strings for this language pack. All of the strings are 
+	// seperated into groups (for example; "Dashboard_SystemSound" and "Dashboard_Instructions"), the individual strings
+	// are one level below the groups, for example: "GroupTitle" and "GetVolume_Description". Modify the values after the 
+	// colon ( : ) to modify what VDC will show on runtime.
+	// REMEMBER: If you modify the syntax, or the names of the objects (eg modifying "GroupTitle") will cause a problem
+	// with the language pack file, and that string will not be read.
+	// You can see that the language pack couldn't be read by either looking for a red ERROR message from Language Manager in
+	// the console, or if one or more string is showing as something starting with: "langstrings.LanguageDefined".
+	// If you break the JSON syntax, causing an illegal syntax modification, the entire file will break and you'll either have
+	// to find the error or rewrite the language pack. This is commonly the problem when no controls are showing the correct 
+	// text. Remember though, not all controls use this system yet, and that will not be the case for a long time to come, due
+	// purely to the massive amount of controls used within the Application (nearly 40,000).
+	"LanguageDefined": {
+		"Groups": [
+			{
+				"Dashboard_SystemSound": {
+					"GroupTitle": "System Sound Options",
+					"GetVolume_Description": "Returns the current volume of the Windows OS. Returned every second and a half or so..."
+				},
+				"Dashboard_Instructions": {
+					"Notification_Home_NotifForMovedControls": "Some of the controls have been moved! To use them, you must now click Homepage Options!"
+				},
+				"Dashboard_Buttons": {
+					"HomepageOptions": "Homepage Options",
+					"ExecuteQuickAction": "Execute"
+				}
+			}
+		]	
+	}	
+}
