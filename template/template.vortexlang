@@ -1,58 +1,44 @@
 // VORTEX LANGUAGE PACK 
-// GB English - (United Kingdom English) by Vortex Chelmsford 
-// Information available on Vortex Website
+// COUNTRY CODE AND OTHER LANGUAGE INFORMATION GOES HERE. VORTEX WILL DO THIS FOR YOU IF YOU ARE UNSURE
+// For informative annotations, please see the /lang directory and select your chosen language.
+
+// WARNING: DELETE ALL COMMENTS BELOW THIS LINE WHEN YOU HAVE FINISHED MAKING YOUR LANGUAGE PACK IF YOU WISH TO TEST IT
+// YOU DO NOT HAVE PERMISSION TO SHARE THIS PACK **UNLESS** YOU HAVE CHECKED WITH VORTEX AND HAD IT EVALUATED FIRST!
 {
-	// Please give information about the language used within this file.
-	// The full name of the language should go within the "Name" item.
-	// The abbreviation should be the first two lower case letters of the name, for example, "English" is "en"
-	// followed by an underscore, then the name of the country the language is set out to use spellings for,
-	// for example, for spellings in Great Britian, the code is GB. Hence the name "en_GB".
-	// Lastly, type the name of the country represented in the last part of the abbreviation in the "Country" section.
+	// Specify details about your language pack here
 	"Language": {
-		"Name": "English - GB",
-		"Abbreviation": "en_GB",
-		"Country": "United Kingdom"
+		"Name": "<Country> - <Country Code>", // Type the name of your country, then your two-letter country code (eg GB or US or DE) 
+		"Abbreviation": "<In lowercase, first two letters of country name>_<Country Code in caps>", // The first two letters of your country's name (in lowercase), followed by an underscore, followed by your country code (written in CAPS)
+		"Country": "<Country name>" // In sentence case (eg: Hello, how are you today?) -- the name of your country (eg "United Kingdom" or "United States" or "Republic of Northern Ireland")
 	},
 	
-	// Give "FlagName" the file path to a .png file no more than 1200 x 1200 pixels. This will (in the future) be 
-	// displayed on the dashboard. If no path is given, and just a file name, the program will scan inside the
-	// lang folder of the Vortex Digital Control root installation.
+	// Specify information about flags
 	"FetchFiles": {
-		"FlagName": "flag.png"
-	},
+		"UseFlagPreset": false, // If you want to import your own custom flag using FlagPath, set this to false, if you want to use a Vortex-included flags (list of which is available on Vortex website) - set this to true.
+		"FlagPresetName": "", // Name the flag you wish to use from the Vortex-included selection of flags. More info on the website /fordevelopers. By the way, this flag path won't be respected unless UseFlagPreset is set to true.
+		"FlagPath": "flag.png" // We haven't implemented this functionality now, however if you want to specify the path of a .png no more than 1200*1200 go ahead. It'll be used in the future!		
+	},				// WARNING: if not using "FlagPath", please set it to: null (without quotes)!!!
 	
-	// If modifying this pack, change "Supported" to **ANYTHING NUMBER OTHER THAN ZERO**
 	// Set the "VLP_Code" to **ANYTHING ABOVE 10,000**
 	"VortexLanguagePack": {
-		"Supported": 1,
-		"VLP_Code": 2
-	},
+		"Supported": 0, // If you're making a language pack to translate VDC into another language, you may, with permission from Vortex, set this to 1, otherwise, you must set it to any other number, meaning ANY NUMBER that IS NOT 1.
+		"VLP_Code": 40001 // Please set this number to anything above 40,000. This means it DEFINITELY won't clash with any other Vortex Library Packs we may enable in VDC. These codes ensure the safe registration of the packs, and if they clash, a crash will occur. Similarity not intended. It doesn't matter if the number clashes when it's above 40,000 as VDC will allocate it a new one, however it MUST be above 40,000 to show VDC that it isn't Vortex-made.
+	},			  // WARNING: Please set this to 97,979 and start VDC (and select this file as the language file) to tell VDC that this has been Vortex-verified. It doesn't need changing once you've done this! (If you don't do this, please don't distribute, but doing it before asking Vortex's permission won't do any harm, it'll just disable DEV Mode and Further Logging mode!)
 	
-	// "LanguageDefined" contains all of the defined language strings for this language pack. All of the strings are 
-	// seperated into groups (for example; "Dashboard_SystemSound" and "Dashboard_Instructions"), the individual strings
-	// are one level below the groups, for example: "GroupTitle" and "GetVolume_Description". Modify the values after the 
-	// colon ( : ) to modify what VDC will show on runtime.
-	// REMEMBER: If you modify the syntax, or the names of the objects (eg modifying "GroupTitle") will cause a problem
-	// with the language pack file, and that string will not be read.
-	// You can see that the language pack couldn't be read by either looking for a red ERROR message from Language Manager in
-	// the console, or if one or more string is showing as something starting with: "langstrings.LanguageDefined".
-	// If you break the JSON syntax, causing an illegal syntax modification, the entire file will break and you'll either have
-	// to find the error or rewrite the language pack. This is commonly the problem when no controls are showing the correct 
-	// text. Remember though, not all controls use this system yet, and that will not be the case for a long time to come, due
-	// purely to the massive amount of controls used within the Application (nearly 40,000).
+	// Ah, the meat an potatoes of the file! The acutal Language Definitions. These objects MUST keep their syntax, otherwise the entire file won't work!
 	"LanguageDefined": {
 		"Groups": [
 			{
-				"Dashboard_SystemSound": {
-					"GroupTitle": "System Sound Options",
-					"GetVolume_Description": "Returns the current volume of the Windows OS. Returned every second and a half or so..."
+				"Dashboard_SystemSound": { // < -- DO NOT MODIFY THIS VALUE, IT IS NOT A STRING, IT IS AN OBJECT TITLE
+					"GroupTitle": "",  // < -- This appears in Dashboard -> System Tasks as the title of the System Sound options functions (get/set vol etc). Defualt: """System Sound Options"""
+					"GetVolume_Description": "" // < -- This is the description of the Get System Volume function which returns every approx 0.7 seconds. Defualt: """Returns the current volume of the Windows OS. Returned every second and a half or so..."""
 				},
 				"Dashboard_Instructions": {
-					"Notification_Home_NotifForMovedControls": "Some of the controls have been moved! To use them, you must now click Homepage Options!"
+					"Notification_Home_NotifForMovedControls": "" <-- This appeaers on the Home page of the Dashboard, as a reminder to users of older builds that the Applications buttons on the Home page have been moved into a Homepage Options window, the text for such button is configurable below. Default: """Some of the controls have been moved! To use them, you must now click Homepage Options!""" (remove the three sets of "") 
 				},
 				"Dashboard_Buttons": {
-					"HomepageOptions": "Homepage Options",
-					"ExecuteQuickAction": "Execute"
+					"HomepageOptions": "", < -- This appears in the bottom right corner of the Home page of the Dashboard. It displays in purple and is clicked on to access applets such as Settings, Changeloeg etc. - Default """Homepage Options"""
+					"ExecuteQuickAction": "" < -- This appears at the bottom of the Dashboard window, irrespective of which tab is selected. It is the text on the button underneath the combo box used for selecting which Quick Action the user would like to execute. Default: """Execute""" 
 				}
 			}
 		]	
