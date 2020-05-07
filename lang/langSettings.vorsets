@@ -12,7 +12,26 @@
 			{
 				"contrib_id": 3,
 				"settings": "4891x0149pqd"
+			},
+			{	
+				"contrib_id": 4,
+				"settings": "130X41"
 			}
 		]
 	}
+	
+	"inject_to_current": [
+			{
+				"inject_to_contrib": 24195,
+				"append_id": 10314
+			},
+			{	
+				"inject_to_contrib": 91200,
+				"append_id": 95251
+			},
+			{
+				"inject_to_contrib": 44019,
+				"append_id": 41912
+			}
+		]
 }
